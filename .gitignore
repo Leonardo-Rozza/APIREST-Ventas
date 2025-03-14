@@ -1,0 +1,31 @@
+# Ignorar archivos y directorios generados por Maven
+.mvn/
+mvnw
+mvnw.cmd
+target/
+
+# Archivos de configuración sensibles (se recomienda usar application-example.properties en su lugar)
+application.properties
+application.yml
+*.properties
+*.yml
+
+# Ignorar logs y archivos temporales
+logs/
+*.log
+*.swp
+
+# Ignorar archivos generados por IDEs
+.idea/
+*.iml
+.vscode/
+*.classpath
+*.project
+*.settings/
+
+# Ignorar archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar dependencias descargadas por Maven (si alguna vez usas `mvn dependency:copy-dependencies`)
+dependency-reduced-pom.xml
