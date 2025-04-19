@@ -6,6 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 @Table(name = "customers")
@@ -35,6 +37,7 @@ public class Customer {
 
   @ManyToOne
   @JoinColumn(name = "country_id")
+  @OnDelete(action = OnDeleteAction.SET_NULL) // Permite eliminar el país y deja country_id como NULL
   @JsonIgnore
   private Country country;
 

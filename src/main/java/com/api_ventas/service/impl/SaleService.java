@@ -11,11 +11,13 @@ import com.api_ventas.presentation.exeptions.ResourceNotFoundException;
 import com.api_ventas.service.ISaleService;
 import com.api_ventas.service.dto.SaleDTO;
 import com.api_ventas.util.mappers.ISaleMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Service
 public class SaleService implements ISaleService {
 
   private final ISaleDAO saleDAO;

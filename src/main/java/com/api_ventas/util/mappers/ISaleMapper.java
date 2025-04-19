@@ -14,12 +14,12 @@ public interface ISaleMapper {
   ISaleMapper INSTANCE = Mappers.getMapper(ISaleMapper.class);
 
   @Mapping(source = "customer.id", target = "customerId")
-  @Mapping(source = "productForSaleLists", target = "products")
+  @Mapping(source = "productForSaleLists", target = "productForSaleDTOList")
   SaleDTO saleToSaleDTO(Sale sale);
 
   List<SaleDTO> saleListToSaleDTOList(List<Sale> saleList);
 
   @Mapping(source = "customerId", target = "customer.id")
-  @Mapping(source = "products", target = "productForSaleLists")
+  @Mapping(source = "productForSaleDTOList", target = "productForSaleLists")
   Sale saleDTOToSale(SaleDTO saleDTO);
 }

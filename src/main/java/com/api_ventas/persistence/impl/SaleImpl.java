@@ -29,7 +29,7 @@ public class SaleImpl implements ISaleDAO {
 
   @Override
   public Sale save(Sale sale) {
-    saleRepository.save(sale);
+    return saleRepository.save(sale);
   }
 
   @Override

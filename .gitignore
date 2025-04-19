@@ -4,12 +4,6 @@ mvnw
 mvnw.cmd
 target/
 
-# Archivos de configuración sensibles (se recomienda usar application-example.properties en su lugar)
-application.properties
-application.yml
-*.properties
-*.yml
-
 # Ignorar logs y archivos temporales
 logs/
 *.log
@@ -26,6 +20,3 @@ logs/
 # Ignorar archivos de sistema
 .DS_Store
 Thumbs.db
-
-# Ignorar dependencias descargadas por Maven (si alguna vez usas `mvn dependency:copy-dependencies`)
-dependency-reduced-pom.xml
